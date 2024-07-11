@@ -70,7 +70,7 @@
     class="op-sidemenu--item-icon"
     [class]="'icon-' + item.icon"
   ></span>
-  <span
+  <span *ngIf="!item.isEnterprise"
     class="op-sidemenu--item-title"
   >{{ item.title }}
     <span class="op-sidemenu--enterprise-badge spot-icon spot-icon_1_25 spot-icon_enterprise-addons upsale-colored" *ngIf="noEEToken && item.isEnterprise"></span>
