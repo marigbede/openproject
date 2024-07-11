@@ -57,8 +57,4 @@ export class OpSidemenuComponent {
   toggleCollapsed():void {
     this.collapsed = !this.collapsed;
   }
-
-  filterEnterpriseItems(): IOpSidemenuItem[] {
-    return this.items.filter(item => !item.isEnterprise);
-  }
 }
