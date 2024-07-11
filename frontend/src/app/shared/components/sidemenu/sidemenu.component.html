@@ -23,7 +23,7 @@
   [ngClass]="{'op-sidemenu--items_collapsed' : collapsed, 'searchable-menu--search-ul': searchable}"
 >
   <li
-    *ngFor="let item of items"
+    *ngFor="let item of filterEnterpriseItems()"
     class="op-sidemenu--item"
     data-test-selector="op-sidemenu--item"
   >
