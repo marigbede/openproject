@@ -75,7 +75,7 @@ RSpec.describe "Top menu items", :js, :with_cuprite do
     shared_let(:activity_item) { menu_link_item.new(I18n.t(:label_activity), activity_index_path) }
     shared_let(:work_packages_item) { menu_link_item.new(I18n.t(:label_work_package_plural), work_packages_path) }
     shared_let(:calendar_item) { menu_link_item.new(I18n.t(:label_calendar_plural), calendars_path) }
-    shared_let(:team_planners_item) { menu_link_item.new(I18n.t("team_planner.label_team_planner_plural"), team_planners_path) }
+    #shared_let(:team_planners_item) { menu_link_item.new(I18n.t("team_planner.label_team_planner_plural"), team_planners_path) }
     shared_let(:boards_item) { menu_link_item.new(I18n.t(:project_module_board_view), work_package_boards_path) }
     shared_let(:news_item) { menu_link_item.new(I18n.t(:label_news_plural), news_index_path) }
     shared_let(:reporting_item) { menu_link_item.new(I18n.t(:cost_reports_title), "/cost_reports") }
@@ -87,7 +87,7 @@ RSpec.describe "Top menu items", :js, :with_cuprite do
         activity_item,
         work_packages_item,
         calendar_item,
-        team_planners_item,
+        #team_planners_item,
         boards_item,
         news_item,
         reporting_item,
