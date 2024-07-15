@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - apin/stable-14
+      - trial
   workflow_dispatch:
 
 jobs:
