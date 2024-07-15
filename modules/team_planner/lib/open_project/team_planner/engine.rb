@@ -58,15 +58,15 @@ module OpenProject::TeamPlanner
         User.current.allowed_in_any_project?(:view_team_planner)
       end
 
-      menu :global_menu,
-           :team_planners,
-           { controller: "/team_planner/team_planner", action: :overview },
-           caption: :"team_planner.label_team_planner_plural",
-           before: :boards,
-           after: :calendar_view,
-           icon: "team-planner",
-           if: should_render_global_menu_item,
-           enterprise_feature: "team_planner_view"
+#      menu :global_menu,
+#           :team_planners,
+#           { controller: "/team_planner/team_planner", action: :overview },
+#           caption: :"team_planner.label_team_planner_plural",
+#           before: :boards,
+#           after: :calendar_view,
+#           icon: "team-planner",
+#           if: should_render_global_menu_item,
+#           enterprise_feature: "team_planner_view"
 
       menu :project_menu,
            :team_planner_view,
@@ -84,15 +84,15 @@ module OpenProject::TeamPlanner
            last: true,
            caption: :"team_planner.label_team_planner_plural"
 
-      menu :top_menu,
-           :team_planners, { controller: "/team_planner/team_planner", action: :overview },
-           context: :modules,
-           caption: :"team_planner.label_team_planner_plural",
-           before: :boards,
-           after: :calendar_view,
-           icon: "team-planner",
-           if: should_render_global_menu_item,
-           enterprise_feature: "team_planner_view"
+     # menu :top_menu,
+     #      :team_planners, { controller: "/team_planner/team_planner", action: :overview },
+     #      context: :modules,
+     #      caption: :"team_planner.label_team_planner_plural",
+     #      before: :boards,
+     #      after: :calendar_view,
+     #      icon: "team-planner",
+     #      if: should_render_global_menu_item,
+     #      enterprise_feature: "team_planner_view"
     end
 
     add_view :TeamPlanner,
