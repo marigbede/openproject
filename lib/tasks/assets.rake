@@ -64,9 +64,11 @@ namespace :assets do
     Dir.chdir Rails.root.join("frontend") do
       cmd =
         if ENV["CI"]
-          "npm run build:ci"
+          #"npm run build:ci"
+          "npm run build"
         elsif ENV["OPENPROJECT_ANGULAR_UGLIFY"] == "false"
-          "npm run build:fast"
+          #"npm run build:fast"
+          "npm run build"
         else
           "npm run build"
         end
