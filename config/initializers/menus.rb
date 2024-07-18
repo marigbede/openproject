@@ -244,11 +244,11 @@ Redmine::MenuManager.map :admin_menu do |menu|
             caption: :label_user_plural,
             icon: "group"
 
-  menu.push :placeholder_users,
-            { controller: "/placeholder_users" },
-            if: Proc.new { !User.current.admin? && User.current.allowed_globally?(:manage_placeholder_user) },
-            caption: :label_placeholder_user_plural,
-            icon: "group"
+#  menu.push :placeholder_users,
+#            { controller: "/placeholder_users" },
+#            if: Proc.new { !User.current.admin? && User.current.allowed_globally?(:manage_placeholder_user) },
+#            caption: :label_placeholder_user_plural,
+#            icon: "group"
 
   menu.push :users_and_permissions,
             { controller: "/users" },
@@ -268,12 +268,12 @@ Redmine::MenuManager.map :admin_menu do |menu|
             caption: :label_user_plural,
             parent: :users_and_permissions
 
-  menu.push :placeholder_users,
-            { controller: "/placeholder_users" },
-            if: Proc.new { User.current.admin? },
-            caption: :label_placeholder_user_plural,
-            parent: :users_and_permissions,
-            enterprise_feature: "placeholder_users"
+#  menu.push :placeholder_users,
+#            { controller: "/placeholder_users" },
+#            if: Proc.new { User.current.admin? },
+#            caption: :label_placeholder_user_plural,
+#            parent: :users_and_permissions,
+#            enterprise_feature: "placeholder_users"
 
   menu.push :groups,
             { controller: "/groups" },
