@@ -499,12 +499,12 @@ Redmine::MenuManager.map :admin_menu do |menu|
             last: true,
             icon: "save"
 
-  menu.push :info,
-            { controller: "/admin", action: "info" },
-            if: Proc.new { User.current.admin? },
-            caption: :label_information_plural,
-            last: true,
-            icon: "info1"
+#  menu.push :info,
+#            { controller: "/admin", action: "info" },
+#            if: Proc.new { User.current.admin? },
+#            caption: :label_information_plural,
+#            last: true,
+#            icon: "info1"
 
 #  menu.push :custom_style,
 #            { controller: "/custom_styles", action: :show },
