@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 See COPYRIGHT and LICENSE files for more details.
 
 ++#%>
-
+<!--
 <% if tab[:name] == 'ProjectCustomField' %>
   <% unless EnterpriseToken.allows_to?(:custom_fields_in_projects_list) %>
     <%=
@@ -39,6 +39,7 @@ See COPYRIGHT and LICENSE files for more details.
     %>
   <% end %>
 <% end %>
+-->
 
 <% if (@custom_fields_by_type[tab[:name]] || []).any? %>
   <div class="generic-table--container">
