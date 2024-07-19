@@ -88,6 +88,7 @@ See COPYRIGHT and LICENSE files for more details.
     </div>
   </div>
 <% else %>
-  <%= no_results_box display_action: true,
+  <!--true was default-->
+  <%= no_results_box display_action: false, 
                      action_url: OpenProject::Static::Links.url_for(:integrations) %>
 <% end %>
