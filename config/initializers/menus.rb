@@ -361,12 +361,12 @@ Redmine::MenuManager.map :admin_menu do |menu|
             icon: "custom-fields",
             html: { class: "custom_fields" }
 
-  menu.push :custom_actions,
-            { controller: "/custom_actions" },
-            if: Proc.new { User.current.admin? },
-            caption: :"custom_actions.plural",
-            parent: :admin_work_packages,
-            enterprise_feature: "custom_actions"
+#  menu.push :custom_actions,
+#            { controller: "/custom_actions" },
+#            if: Proc.new { User.current.admin? },
+#            caption: :"custom_actions.plural",
+#            parent: :admin_work_packages,
+#            enterprise_feature: "custom_actions"
 
   menu.push :attribute_help_texts,
             { controller: "/attribute_help_texts" },
@@ -506,12 +506,12 @@ Redmine::MenuManager.map :admin_menu do |menu|
             last: true,
             icon: "info1"
 
-  menu.push :custom_style,
-            { controller: "/custom_styles", action: :show },
-            if: Proc.new { User.current.admin? },
-            caption: :label_custom_style,
-            icon: "design",
-            enterprise_feature: "define_custom_style"
+#  menu.push :custom_style,
+#            { controller: "/custom_styles", action: :show },
+#            if: Proc.new { User.current.admin? },
+#            caption: :label_custom_style,
+#            icon: "design",
+#            enterprise_feature: "define_custom_style"
 
   menu.push :colors,
             { controller: "/colors", action: "index" },
