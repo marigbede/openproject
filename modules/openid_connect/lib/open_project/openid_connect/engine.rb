@@ -7,17 +7,17 @@ module OpenProject::OpenIDConnect
     include OpenProject::Plugins::ActsAsOpEngine
     extend OpenProject::Plugins::AuthPlugin
 
-    register "openproject-openid_connect",
-             author_url: "https://www.openproject.org",
-             bundled: true,
-             settings: { "default" => { "providers" => {} } } do
-      menu :admin_menu,
-           :plugin_openid_connect,
-           :openid_connect_providers_path,
-           parent: :authentication,
-           caption: ->(*) { I18n.t("openid_connect.menu_title") },
-           enterprise_feature: "openid_providers"
-    end
+    #register "openproject-openid_connect",
+    #         author_url: "https://www.openproject.org",
+    #         bundled: true,
+    #         settings: { "default" => { "providers" => {} } } do
+    #  menu :admin_menu,
+    #       :plugin_openid_connect,
+    #       :openid_connect_providers_path,
+    #       parent: :authentication,
+    #       caption: ->(*) { I18n.t("openid_connect.menu_title") },
+    #       enterprise_feature: "openid_providers"
+    #end
 
     assets %w(
       openid_connect/auth_provider-azure.png

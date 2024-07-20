@@ -3040,9 +3040,9 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
   setting_apiv3_cors_origins: "API V3 Cross-Origin Resource Sharing (CORS) allowed origins"
   setting_apiv3_cors_origins_text_html: >
     If CORS is enabled, these are the origins that are allowed to access APIN Project Tracking System API.
-    <br/>
-    Please check the <a href="%{origin_link}" target="_blank">Documentation on the Origin header</a> on how to specify the expected values.
   setting_apiv3_write_readonly_attributes: "Write access to read-only attributes"
+  #</br>
+  #  For more information on attributes and supported resources, please see the %{api_documentation_link}.
   setting_apiv3_write_readonly_attributes_instructions_html: >
     If enabled, the API will allow administrators to write static read-only attributes during creation,
     such as createdAt and author.
@@ -3050,8 +3050,6 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
     <strong>Warning:</strong> This setting has a use-case for e.g., importing data, but allows
     administrators to impersonate the creation of items as other users. All creation requests are being
     logged however with the true author.
-    </br>
-    For more information on attributes and supported resources, please see the %{api_documentation_link}.
   setting_apiv3_max_page_size: "Maximum API page size"
   setting_apiv3_max_page_instructions_html: >
     Set the maximum page size the API will respond with.
@@ -3241,7 +3239,6 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
       first_week_of_year_text_html: >
         Select the date of January that is contained in the first week of the year.
         This value together with first day of the week determines the total number of weeks in a year.
-        For more information, please see our <a href="%{link}" target="_blank">documentation</a> on this topic.
     experimental:
       save_confirmation: Caution! Risk of data loss! Only activate experimental features if you do not mind breaking your APIN Project Tracking System installation and losing all of its data.
       warning_toast: Feature flags are settings that activate features that are still under development. They shall only be used for testing purposes. They shall never be activated on APIN Project Tracking System installations holding important data. These features will very likely corrupt your data. Use them at your own risk.
