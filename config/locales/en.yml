@@ -1847,7 +1847,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
         disabled_text: "API tokens are not enabled by the administrator. Please contact your administrator to use this feature."
       ical:
         title: "iCalendar"
-        text_hint: 'iCalendar tokens allow users to <a href="%{path}" target="_blank">subscribe to APIN Project Tracking System calendars</a> and view up-to-date work package information from external clients.'
+        text_hint: 'iCalendar tokens allow users to subscribe to APIN Project Tracking System calendars and view up-to-date work package information from external clients.'
         disabled_text: "iCalendar subscriptions are not enabled by the administrator. Please contact your administrator to use this feature."
         empty_text_hint: "To add an iCalendar token, subscribe to a new or existing calendar from within the Calendar module of a project. You must have the necessary permissions."
       oauth:
