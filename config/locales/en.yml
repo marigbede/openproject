@@ -57,7 +57,7 @@ en:
         main-menu-border-color: "Main menu border"
       custom_colors: "Custom colors"
       customize: "Customize your APIN Project Tracking System installation with your own logo and colors."
-      enterprise_notice: "As a special 'Thank you!' for their financial contribution to develop OpenProject, this tiny add-on is only available for Enterprise edition support subscribers."
+      enterprise_notice: "As a special 'Thank you!' for their financial contribution to develop APIN Project Tracking System, this tiny add-on is only available for Enterprise edition support subscribers."
       enterprise_more_info: "Note: the used logo will be publicly accessible."
       manage_colors: "Edit color select options"
       instructions:
@@ -131,7 +131,6 @@ en:
     technical_warning_html: |
       This LDAP form requires technical knowledge of your LDAP / Active Directory setup.
       <br/>
-      <a href="https://www.openproject.org/help/administration/manage-ldap-authentication/">Please visit our documentation for detailed instructions</a>.
     attribute_texts:
       name: Arbitrary name of the LDAP connection
       host: LDAP host name or IP address
@@ -141,7 +140,7 @@ en:
       system_user_dn_html: |
         Enter the DN of the system user used for read-only access.
         <br/>
-        Example: uid=openproject,ou=system,dc=example,dc=com
+        Example: uid=apinproject,ou=system,dc=example,dc=com
       system_user_password: Enter the bind password of the system user
       base_dn: |
         Enter the Base DN of the subtree in LDAP you want APIN Project Tracking System to look for users and groups.
@@ -155,7 +154,7 @@ en:
         it will be concatenated with an AND. By default, a catch-all (objectClass=*) will be used as a filter.
       onthefly_register: |
         If you check this box, APIN Project Tracking System will automatically create new users from their LDAP entries
-        when they first authenticate with OpenProject.
+        when they first authenticate with APIN Project Tracking System.
         Leave this unchecked to only allow existing accounts in APIN Project Tracking System to authenticate through LDAP!
 
     connection_encryption: "Connection encryption"
@@ -2671,7 +2670,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
 
   more_actions: "More functions"
 
-  noscript_description: "You need to activate JavaScript in order to use OpenProject!"
+  noscript_description: "You need to activate JavaScript in order to use APIN Project Tracking System!"
   noscript_heading: "JavaScript disabled"
   noscript_learn_more: "Learn more"
 
@@ -2742,7 +2741,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
   notice_wont_delete_auth_source: The LDAP connection cannot be deleted as long as there are still users using it.
   notice_project_cannot_update_custom_fields: "You cannot update the project's available custom fields. The project is invalid: %{errors}"
   notice_attachment_migration_wiki_page: >
-    This page was generated automatically during the update of OpenProject.
+    This page was generated automatically during the update of APIN Project Tracking System.
     It contains all attachments previously associated with the %{container_type} "%{container_name}".
 
   # Default format for numbers
@@ -2768,7 +2767,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
 
   onboarding:
     heading_getting_started: "Get an overview"
-    text_getting_started_description: "Get a quick overview of project management and team collaboration with OpenProject. You can restart this video from the help menu."
+    text_getting_started_description: "Get a quick overview of project management and team collaboration with APIN Project Tracking System. You can restart this video from the help menu."
     welcome: "Welcome to %{app_title}"
     select_language: "Please select your language"
 
@@ -2949,7 +2948,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
     destroy:
       confirmation: "If you continue, this will permanently delete the managed repository."
       info: "Deleting the repository is an irreversible action."
-      info_not_managed: "Note: This will NOT delete the contents of this repository, as it is not managed by OpenProject."
+      info_not_managed: "Note: This will NOT delete the contents of this repository, as it is not managed by APIN Project Tracking System."
       managed_path_note: "The following directory will be erased: %{path}"
       repository_verification: "Enter the project's identifier %{identifier} to verify the deletion of its repository."
       subtitle: "Do you really want to delete the %{repository_type} of the project %{project_name}?"
@@ -2963,7 +2962,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
       empty_repository: "The repository exists, but is empty. It does not contain any revisions yet."
       exists_on_filesystem: "The repository directory already exists in the filesystem."
       filesystem_access_failed: "An error occurred while accessing the repository in the filesystem: %{message}"
-      not_manageable: "This repository vendor cannot be managed by OpenProject."
+      not_manageable: "This repository vendor cannot be managed by APIN Project Tracking System."
       path_permission_failed: "An error occurred trying to create the following path: %{path}. Please ensure that APIN Project Tracking System may write to that folder."
       unauthorized: "You're not authorized to access the repository or the credentials are invalid."
       unavailable: "The repository is unavailable."
@@ -3305,7 +3304,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
       skip_last_comma: "false"
 
   text_accessibility_hint: "The accessibility mode is designed for users who are blind, motorically handicaped or have a bad eyesight. For the latter focused elements are specially highlighted. Please notice, that the Backlogs module is not available in this mode."
-  text_access_token_hint: "Access tokens allow you to grant external applications access to resources in OpenProject."
+  text_access_token_hint: "Access tokens allow you to grant external applications access to resources in APIN Project Tracking System."
   text_analyze: "Further analyze: %{subject}"
   text_are_you_sure: "Are you sure?"
   text_are_you_sure_continue: "Are you sure you want to continue?"
@@ -3558,7 +3557,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
     Adding additional users will exceed the current limit. Please <a href="%{upgrade_url}">upgrade your plan</a> to be able to ensure external users are able to access this instance.
   warning_user_limit_reached_instructions: >
     You reached your user limit (%{current}/%{max} active users).
-    Please contact sales@openproject.com to upgrade your Enterprise edition plan and add additional users.
+    Please contact Support.
   warning_protocol_mismatch_html: >
 
   warning_bar:
@@ -3791,7 +3790,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
         confidential: "Check if the application will be used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are assumed non-confidential."
         scopes: "Check the scopes you want the application to grant access to. If no scope is checked, api_v3 is assumed."
         client_credential_user_id: "Optional user ID to impersonate when clients use this application. Leave empty to allow public access only"
-        register_intro: "If you are developing an OAuth API client application for OpenProject, you can register it using this form for all users to use."
+        register_intro: "If you are developing an OAuth API client application for APIN Project Tracking System, you can register it using this form for all users to use."
         default_scopes: ""
     client_id: "Client ID"
     client_secret_notice: >
@@ -3855,7 +3854,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
       refresh_token_updated_failed: "Error during update of OAuthClientToken"
       oauth_client_not_found_explanation: >
         This error appears after you have updated the client_id and client_secret
-        in OpenProject, but haven't updated the 'Return URI' field in the OAuth2 provider.
+        in APIN Project Tracking System, but haven't updated the 'Return URI' field in the OAuth2 provider.
       oauth_code_not_present: "OAuth2 'code' not found in 'callback' endpoint (redirect_uri)."
       oauth_code_not_present_explanation: >
         This error appears if you have selected the wrong response_type
@@ -3890,7 +3889,7 @@ Project attributes and sections are defined in the <a href=%{admin_settings_url}
 
   plugin_openproject_auth_plugins:
     name: "APIN Project Tracking System Auth Plugins"
-    description: "Integration of OmniAuth strategy providers for authentication in OpenProject."
+    description: "Integration of OmniAuth strategy providers for authentication in APIN Project Tracking System."
   plugin_openproject_auth_saml:
     name: "OmniAuth SAML / Single-Sign On"
     description: "Adds the OmniAuth SAML provider to APIN Project Tracking System"
